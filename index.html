@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Datum - Data & Airtime Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js"></script>
+</head>
+
+<body class="bg-[#F8F9FC] text-slate-900 antialiased pb-20">
+    <!-- Premium Splash Screen -->
+    <div id="splash-screen"
+        class="fixed inset-0 z-[9999] bg-[#F8F9FC] flex flex-col items-center justify-center transition-opacity duration-500">
+        <div class="relative">
+            <div
+                class="w-16 h-16 bg-indigo-600 rounded-[22px] flex items-center justify-center shadow-2xl shadow-indigo-200 animate-pulse">
+                <i data-lucide="zap" class="text-white w-8 h-8"></i>
+            </div>
+            <div class="absolute -inset-4 border-2 border-indigo-100 rounded-[32px] animate-ping opacity-20"></div>
+        </div>
+        <div class="mt-8 flex flex-col items-center">
+            <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-indigo-400">
+                Get Datum</h1>
+            <div class="mt-4 flex gap-1">
+                <div class="w-1.5 h-1.5 bg-indigo-600 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+                <div class="w-1.5 h-1.5 bg-indigo-600 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+                <div class="w-1.5 h-1.5 bg-indigo-600 rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="app"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

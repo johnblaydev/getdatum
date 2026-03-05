@@ -1,0 +1,137 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Styles */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up {
+    animation: slideUp 0.4s ease-out forwards;
+}
+
+/* Bulk Mode Styles */
+.switch-input:checked+.switch-label {
+    background-color: #4f46e5;
+}
+
+.switch-input:checked+.switch-label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+.switch-label:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+/* Network Brand Colors */
+.btn-mtn {
+    background-color: #FFCC00 !important;
+    color: #004F9F !important;
+    border-color: #FFCC00 !important;
+}
+
+.btn-mtn-outline {
+    color: #FFCC00 !important;
+    border-color: #FFCC00 !important;
+    background-color: transparent !important;
+}
+
+.active-mtn {
+    border-color: #FFCC00 !important;
+    background-color: #FFFBE6 !important;
+}
+
+.text-mtn {
+    color: #004F9F !important;
+}
+
+.border-mtn {
+    border-color: #FFCC00 !important;
+}
+
+.btn-telecel {
+    background-color: #E60000 !important;
+    color: white !important;
+    border-color: #E60000 !important;
+}
+
+.btn-telecel-outline {
+    color: #E60000 !important;
+    border-color: #E60000 !important;
+    background-color: transparent !important;
+}
+
+.active-telecel {
+    border-color: #E60000 !important;
+    background-color: #FFF5F5 !important;
+}
+
+.text-telecel {
+    color: #E60000 !important;
+}
+
+.border-telecel {
+    border-color: #E60000 !important;
+}
+
+.btn-airteltigo {
+    background-color: #005696 !important;
+    color: white !important;
+    border-color: #005696 !important;
+}
+
+.btn-airteltigo-outline {
+    color: #005696 !important;
+    border-color: #005696 !important;
+    background-color: transparent !important;
+}
+
+.active-airteltigo {
+    border-color: #005696 !important;
+    background-color: #F0F7FF !important;
+}
+
+.text-airteltigo {
+    color: #005696 !important;
+}
+
+.border-airteltigo {
+    border-color: #005696 !important;
+}
+
+/* Splash Screen Transitions */
+#splash-screen {
+    pointer-events: none;
+    will-change: opacity;
+}
+
+#splash-screen.hidden {
+    opacity: 0;
+}
